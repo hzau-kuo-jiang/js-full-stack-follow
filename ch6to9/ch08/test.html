@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script !src="">
+	console.log('你所使用的浏览器是：', navigator.appName);
+	console.log('浏览器的发行版信息：', navigator.appVersion);
+	console.log('浏览器使用的默认语言：', navigator.language);
+	console.log('浏览器的user-agent信息：', navigator.userAgent);
+	console.log('浏览器是否启用了Cookie：', navigator.cookieEnabled ? '是' : '否');
+	console.log('浏览器是否启用了Java：', navigator.javaEnabled() ? '是' : '否');
+	console.log('浏览器所在的设备环境：', navigator.platform);
+	console.log('你的浏览器安装了以下插件：');
+	for (const plugin of navigator.plugins) {
+		console.log('--插件名称：', plugin.name);
+		console.log('--插件描述：', plugin.description);
+		console.log('--插件所在文件：', plugin.filename);
+		console.log('--插件支持的MIME类型数量：', plugin.length);
+	}
+</script>
+</body>
+</html>
